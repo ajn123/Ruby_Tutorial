@@ -12,6 +12,12 @@ Rails commands:
 ```
 rbenv rehash
 gem install rails --no-ri --no-rdoc
+
+brew install mysql
+
+mysql.server start
+
+mysql -u root -p
 ```
 
 
