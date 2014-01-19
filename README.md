@@ -1,4 +1,4 @@
 Ruby_Instruction
 ================
 
-notes and tutorials of Ruby.
+thees are my notes and notes and tutorials of Ruby.
