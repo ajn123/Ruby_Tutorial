@@ -1,7 +1,7 @@
 Ruby Tutorial
 ================
 
-these are my notes and notes and tutorials of Ruby.
+These are my notes and notes and tutorials of Ruby.
 
 
 
