@@ -4,7 +4,7 @@ Ruby Tutorial
 These are my notes and notes and tutorials of Ruby.
 
 
-
+##All of these example are done in ruby version 2.1.
 
 
 
