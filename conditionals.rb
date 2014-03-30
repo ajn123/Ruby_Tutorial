@@ -29,3 +29,7 @@ if x != 100
   puts "heyooooo"
 end
 
+
+#This is the ternary operator, a way of doing an if else statement in one line.
+puts x > 20 ? "true": "false"
+
