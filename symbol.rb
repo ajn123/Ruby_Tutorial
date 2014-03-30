@@ -24,5 +24,7 @@ hash[:name] = "ajn"
 
 puts hash[:name]
 
+
+
 #symbols are not variables, you can not create and assign them
 #:fName = 3  (gives an error)
