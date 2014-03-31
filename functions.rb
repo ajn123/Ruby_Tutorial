@@ -1,5 +1,3 @@
-
-
 =begin
 These are ways to puts your code into separate parts known as functions.
 Functions start with "def" ond are close with "end"
