@@ -58,7 +58,10 @@ def returning(i)
 end
 
 
-
+=begin
+You can return multiple values at once as long as its separated by a comma,
+these will return values in an array format.
+=end
 def returnMultiple(num1,num2)
   return num1  + num2, num1- num2
 end
@@ -66,7 +69,10 @@ end
 
 #Actually calls the method and executes its code contents
 hello
+
 welcome("AJ")
+
+
 welcome "AJ"  #You can also leave off the parenthesis if you REALLY WANT TO.
 
 
@@ -85,6 +91,7 @@ puts num
 
 
 
-a, b = returnMultiple(8,4)
+a = returnMultiple(8,4)
 
-puts a,b
+#prints out the array [12,4]
+print a

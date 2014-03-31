@@ -21,7 +21,6 @@ end
 x = 2
 
 while x < 20
-
   x+= 1
   puts x
 end
@@ -55,5 +54,4 @@ hash = {:apple => "one"}
 hash.each do |key, array|
   puts
   puts "#{key} => #{array}"
-
 end
