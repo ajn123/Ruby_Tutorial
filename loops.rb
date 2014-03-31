@@ -41,7 +41,6 @@ end
 end
 
 
-
 fruits = ["apple","pear","orange"]
 
 fruits.each do |item|
@@ -54,7 +53,7 @@ end
 hash = {:apple => "one"}
 #iterate over a has
 hash.each do |key, array|
-  puts 
+  puts
   puts "#{key} => #{array}"
 
 end
