@@ -7,8 +7,6 @@ to generate a string for each naming instance
 =end
 
 
-puts :symbol.object_id
-
 
 #even though they are the same string they have different object IDs because they
 #are made twice.
@@ -18,13 +16,16 @@ puts "hi".object_id
 
 #this takes up alot LESS memory when you use hashes.
 hash = {:name => "aj", :lastName => "Norton"}
+hash1 = {:name => "bob", :lastName => "The Builder"}
 
+puts
 
-hash[:name] = "ajn"
+x = :sym
+y = :sym
 
-puts hash[:name]
-
-
+#Both of these will have the same address.
+puts x.object_id
+puts y.object_id
 
 #symbols are not variables, you can not create and assign them
 #:fName = 3  (gives an error)

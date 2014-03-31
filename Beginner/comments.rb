@@ -1,8 +1,7 @@
 =begin
-This is a comment.
-This is a comment, too.
-This is a comment, too.
-I said that already.
+This is a
+multiline comment that can be used
+to write huge paragraphs of things.
 =end
 
 
