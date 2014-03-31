@@ -45,6 +45,23 @@ def defaultParams(name = "AJ")
 end
 
 
+=begin
+You can return values from a function to use in other functions or see what that function
+outputted.
+=end
+def returning(i)
+  if i > 50
+    return 100
+  else
+    return 0
+  end
+end
+
+
+
+def returnMultiple(num1,num2)
+  return num1  + num2, num1- num2
+end
 
 
 #Actually calls the method and executes its code contents
@@ -61,3 +78,13 @@ defaultParams
 
 #overriding default parameter.
 defaultParams "BOB"
+
+
+num = returning(1000)
+puts num
+
+
+
+a, b = returnMultiple(8,4)
+
+puts a,b
