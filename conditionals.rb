@@ -39,6 +39,12 @@ message = if x > 20
 puts message
 
 
+#Opposite of an if statement it is like having an else statement on its own.
+unless x < 20
+  puts "ok"
+end
+
+
 #This is the ternary operator, a way of doing an if else statement in one line.
 puts x > 20 ? "true": "false"
 
