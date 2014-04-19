@@ -10,6 +10,11 @@ for i in 0..5
   puts "Value of local variable is #{i}"
 end
 
+#Step to different parts of the loop.
+1.step(10,2) do |i|
+  puts i
+end
+
 puts ""
 
 #Goes from 0 to 4
