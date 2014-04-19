@@ -30,6 +30,15 @@ if x != 100
 end
 
 
+message = if x > 20
+            "Greater than 20."
+          else
+            "less than 20"
+          end
+
+puts message
+
+
 #This is the ternary operator, a way of doing an if else statement in one line.
 puts x > 20 ? "true": "false"
 

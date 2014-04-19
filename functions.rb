@@ -65,6 +65,13 @@ def returnMultiple(num1,num2)
 end
 
 
+def returnMultiple2(num1,num2)
+  lend = 5 #local variable in function.
+  return num1  + num2, num1- num2
+end
+
+
+
 #Actually calls the method and executes its code contents
 hello
 
