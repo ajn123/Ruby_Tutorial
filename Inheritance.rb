@@ -2,7 +2,13 @@ class  Probe
 
 @@value = 2
 
-#class method used for the class and is independent of class state.
+#class method used for the class and is independent of object state.
+
+=begin
+self refers to the current execution context.  Inside a class adding self
+makes it a class method.
+
+=end
   def self.wonder
     puts 2
   end
@@ -27,12 +33,27 @@ is only allowed.
 
 class MineralProbe < Probe
 
+  attr_accessor :name
+
+  def initialize(name)
+    @name = name
+  end
+
   def deploy
     puts "preparing sample chamber"
     super() #Calls the parents version of deploy.
   end
 
+  #I can override the "==" operator to check for main.
+  def ==(other)
+    name == other.name
+  end
+
 end
 
 
-MineralProbe.new.deploy()
+a= MineralProbe.new("aj")
+
+b = MineralProbe.new("aj")
+
+puts a == b #print true.
