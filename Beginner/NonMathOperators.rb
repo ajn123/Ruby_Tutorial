@@ -1,7 +1,6 @@
 
 
-result = nil
-
+result = nil #Nill is a special object witch signifies no value.
 
 puts result.nil?
 
