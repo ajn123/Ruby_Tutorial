@@ -71,6 +71,11 @@ def returnMultiple2(num1,num2)
 end
 
 
+def say_hello(name, city, state)
+  #Join joins the name variable which could be an array.
+  "Hello, #{name.join(' ')}! Welcome to #{city}, #{state}!"
+end
+
 
 #Actually calls the method and executes its code contents
 hello

@@ -14,3 +14,4 @@ puts a
 puts a.strip!
 
 puts a
+
