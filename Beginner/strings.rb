@@ -10,5 +10,7 @@ puts b
 
 
 #Creates string of 26 0's.
-a = '0' * 26
+a = 'abc' * 26
 
+
+print a.reverse
