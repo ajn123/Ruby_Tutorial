@@ -57,3 +57,4 @@ people.values.each {|item| puts item}
 
 puts "One line example"
 people.each {|key,value| puts "#{key}, #{value}"}
+

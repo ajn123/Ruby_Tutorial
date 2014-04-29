@@ -33,5 +33,9 @@ book.gsub!('This', "The")  #Replaces all occurences of "This" with "The"
 
 
 
+array = book.split() #turns string into array with each item separated by a space.
+puts array.inspect
+
+
 puts book.lines.to_a.reverse
 
