@@ -12,8 +12,15 @@ people = {:firstName => 'aj',:lastName => 'Norton'}
 
 
 
+#print all values.
+people.values.each do |value|
+  puts "value is #{value}"
+end
 
-
+#print all keys
+people.keys.each do |key|
+  puts "key is #{key}"
+end
 
 
 puts people['firstName']

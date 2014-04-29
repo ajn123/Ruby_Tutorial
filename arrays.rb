@@ -22,6 +22,4 @@ puts "#{nums}"
 puts names.inspect
 
 
-puts nums.to_s
-
-puts nums.sort
+print nums.sort!  #sorts the array, permanately altering the array. [1, 2, 3, 4, 5, 23.4]

@@ -24,3 +24,14 @@ puts a
 puts b #prints  ]3 ,2 ,1 ,1[
 puts b[1] #prints 3
 
+
+book = "This is a story of a child who cried all day because he"+ #Continuing a next line.
+      "could not go to the zoo. This child was very sad."
+
+book["This"] = "The"   #Replaces all occurences
+book.gsub!('This', "The")  #Replaces all occurences of "This" with "The"
+
+
+
+puts book.lines.to_a.reverse
+
