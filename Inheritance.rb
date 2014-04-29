@@ -52,8 +52,8 @@ class MineralProbe < Probe
 end
 
 
-a= MineralProbe.new("aj")
+probe= MineralProbe.new("aj")
 
-b = MineralProbe.new("aj")
+newProbe = MineralProbe.new("aj")
 
-puts a == b #print true.
+puts probe == newProbe #print true.
