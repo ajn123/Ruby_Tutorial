@@ -74,7 +74,10 @@ class Planet
     @name = name
     @@planets_count += 1
   end
-
+=begin
+the keyword self denotes that the method show is being defined in the context of the Class itself,
+not its instances. Any method definition without the self qualifier is by default an instance method.
+=end
   def self.planets_count
     @@planets_count #returns planets counts.
   end
