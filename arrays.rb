@@ -8,6 +8,8 @@ puts "#{names}"
 nums = [1, 2, 3, 5,4]
 
 
+puts nums.max #prints the max number in the array, which is 5.
+
 #adds an element to the end of the array.
 nums << 23.4
 
