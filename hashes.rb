@@ -51,3 +51,6 @@ people.each_entry do |n,i|
 end
 
 
+#One line way to print out
+people.values.each {|item| puts item}
+
