@@ -1,8 +1,15 @@
+=begin
+A big difference in strings is that you can have a string with single quotes ''
+or double quotes "", the difference is that double quotes can be interpreted
+whereas single quotes get displayed literally.  Example is shown below.
+=end
 
+a = "hello \n" #prints out "hello" with a new line.
+ex2 = 'HELLO \n' #prints out 'Hello \n'
 
-a = "HELLO"
 
 puts a.upcase
+puts ex2
 
 b = a.downcase
 

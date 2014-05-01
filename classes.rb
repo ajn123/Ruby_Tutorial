@@ -84,6 +84,7 @@ not its instances. Any method definition without the self qualifier is by defaul
 end
 
 
-Planet.new("earth"); Planet.new("uranus")
+Planet.new("earth");
+Planet.new("uranus")
 
 p Planet.planets_count
