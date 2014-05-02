@@ -44,5 +44,21 @@ array = book.split() #turns string into array with each item separated by a spac
 puts array.inspect
 
 
+
+
+
 puts book.lines.to_a.reverse
+
+
+
+#Substitution:::::
+
+#only substitutes first occurence.
+puts "this is a substitution and a another substitution".sub('substitution',"hello")
+
+#Substitutes all occurences.
+puts "this is a substitution and a another substitution".gsub('substitution',"hello")
+
+
+
 
