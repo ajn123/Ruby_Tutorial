@@ -9,6 +9,10 @@ nums = [1, 2, 3, 5,4]
 
 
 puts nums.max #prints the max number in the array, which is 5.
+puts nums.min
+
+puts nums[-4] #You can count backgrounds from the end of an array. Prints "2".
+
 
 #adds an element to the end of the array.
 nums << 23.4
