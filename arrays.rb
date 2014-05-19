@@ -27,3 +27,31 @@ puts names.inspect
 
 
 print nums.sort!  #sorts the array, permanately altering the array. [1, 2, 3, 4, 5, 23.4]
+
+
+puts nums.map{|item| item*3}#perform operations over an entire list.
+
+
+puts nums.select{|item| item % 2 == 0} #selects only the even numbers in the array.
+
+
+puts [1,2,3,44,55,66].delete_if{|i| i < 4}
+
+array = [5,5,5,1]
+array.delete 5  #deletes all instances of 5 in an array.
+puts array.to_s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
