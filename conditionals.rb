@@ -25,24 +25,16 @@ end
 
 
 #the != is a way of saying "not equal".
-if x != 100
-  puts "heyooooo"
-end
+puts "heyooooo" if x != 100
 
 
-message = if x > 20
-            "Greater than 20."
-          else
-            "less than 20"
-          end
+message = x > 20 ? "Greater than 20." :  "less than 20"
 
 puts message
 
 
 #Opposite of an if statement it is like having an else statement on its own.
-unless x < 20
-  puts "ok"
-end
+puts "ok" unless x < 20
 
 
 #This is the ternary operator, a way of doing an if else statement in one line.
