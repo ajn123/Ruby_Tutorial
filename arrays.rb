@@ -42,3 +42,6 @@ array.delete 5  #deletes all instances of 5 in an array.
 puts array.to_s
 
 
+
+puts [[1,2,3],[2,3,4]].flatten
+
