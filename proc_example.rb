@@ -22,4 +22,5 @@ end
 
 numbers_array.map(&increment)
 
-strings_array = numbers_array.map(&:to_s)
+
+strings_array = numbers_array.map(&:to_s) #map the array to built in to_s function.
