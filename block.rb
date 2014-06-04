@@ -4,7 +4,13 @@ You can define blocks
 =end
 
 
+
 array = (1..5)
+
+h = { "a" => 100, "b" => 200, "c" => 300 }
+
+
+puts h.select {|k,v| k > "a"}  #=> {"b" => 200, "c" => 300}
 
 #Returns an array of elements that reach the criteria.
 array.select{|i| i > 3}
