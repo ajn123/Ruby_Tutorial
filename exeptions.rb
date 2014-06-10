@@ -2,11 +2,10 @@
 Exception occur when rules have been violated and the program must terminate.
 These exceptions can be caught and dealt with by rescuing them and determining what to
 do when such an illegal event occurs like dividing by zero.
-
 =end
 
 
-def rescue
+def rescueThis
   begin
     illegalDivide
     rescue
@@ -22,4 +21,5 @@ def illegalDivide
 end
 
 
-rescue()
+rescueThis()
+
