@@ -18,3 +18,5 @@ end
 
 # matches any word including ones with single quotes.
 puts "a's b c d".downcase.scan(/[\w']+/)[0]  # returns a's
+
+

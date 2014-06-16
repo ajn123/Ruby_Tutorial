@@ -6,6 +6,8 @@ whereas single quotes get displayed literally.  Example is shown below.
 
 a = "hello \n" #prints out "hello" with a new line.
 ex2 = 'HELLO \n' #prints out 'Hello \n'
+big_string = %w{For a very big string you do not need quotes, you just need a %w and
+                braces to store a entire paragraph in a string.}
 
 
 puts a.upcase
