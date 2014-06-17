@@ -53,13 +53,21 @@ puts book.lines.to_a.reverse
 
 
 
-#Substitution:::::
+#Substitution
 
 #only substitutes first occurence.
 puts "this is a substitution and a another substitution".sub('substitution',"hello")
 
 #Substitutes all occurences.
 puts "this is a substitution and a another substitution".gsub('substitution',"hello")
+
+string_example = "This is an example."
+
+#
+string_example.gsub!('example','EXAMPLE!')
+
+
+puts string_example # => This is an EXAMPLE.
 
 
 
