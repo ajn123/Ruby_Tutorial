@@ -1,10 +1,9 @@
-=begin
-Symbols are only stored one time in memory.
-a symbol is something that you use to represent names and strings.
-What this boils down to is a way to efficiently
-have descriptive names while saving the space one would use
-to generate a string for each naming instance
-=end
+# Symbols are only stored one time in memory.
+# a symbol is something that you use to represent names and strings.
+# What this boils down to is a way to efficiently
+# have descriptive names while saving the space one would use
+# to generate a string for each naming instance
+
 
 
 

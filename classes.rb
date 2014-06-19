@@ -1,9 +1,7 @@
-=begin
-Class names must begin With a CAPITAL letter.  Usually camelCase
-is used for class names.
-=end
+# Class names must begin With a CAPITAL letter.  Usually camelCase
+# is used for class names.
 
-#Basic class that takes in
+
 class BlogEntry
   attr_accessor :time
   @@time = Time.now
@@ -17,28 +15,20 @@ end
 
 class Classes
 
-
 attr_accessor :firstName,:lastName,:mood #sets variables to both read and write.
 
 attr_reader :legs #allows you to set instance variable to read only
 
 attr_writer :arms #allows you to set instance variables to write only
 
-
-
-=begin
-  Acts an constructor for ruby classes.
-=end
+# Acts an constructor for ruby classes.
 def initialize(param1)
 
   puts param1
 end
 
-=begin
-You can define methods for classes that work within a instance of that class
+# You can define methods for classes that work within a instance of that class
 
-
-=end
 
 
 def print

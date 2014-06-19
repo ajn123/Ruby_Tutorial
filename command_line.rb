@@ -14,4 +14,3 @@ puts `ls -la` # => drwxr-xr-x  4 AlexNorton  staff   136 Jun 18 23:12 .
   `sleep #{num}`  # sleeps for 1, 2, and 3 seconds in succession
 end               # no return value since sleep does not print to console
 
-

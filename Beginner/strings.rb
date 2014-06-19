@@ -1,11 +1,10 @@
-=begin
-A big difference in strings is that you can have a string with single quotes ''
-or double quotes "", the difference is that double quotes can be interpreted
-whereas single quotes get displayed literally.  Example is shown below.
-=end
+# A big difference in strings is that you can have a string with single quotes ''
+# or double quotes "", the difference is that double quotes can be interpreted
+# whereas single quotes get displayed literally.  Example is shown below.
 
-a = "hello \n" #prints out "hello" with a new line.
-ex2 = 'HELLO \n' #prints out 'Hello \n'
+
+a = "hello \n"   # prints out "hello" with a new line.
+ex2 = 'HELLO \n' # prints out 'Hello \n'
 big_string = %w{For a very big string you do not need quotes, you just need a %w and
                 braces to store a entire paragraph in a string.}
 
@@ -18,13 +17,13 @@ b = a.downcase
 puts b
 
 
-#Creates string of 26 0's.
+# Creates string of 26 0's.
 a = 'abc' * 26
 
 
 puts a.reverse
 
-#to_s converts anything to a string
+# to_s converts anything to a string
 a = 345.to_s
 
 b = [1,1,2,3].to_s.reverse  #converts an array to a string and reverses it.
