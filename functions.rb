@@ -33,9 +33,9 @@ end
 # outputted.
 def returning(i)
   if i > 50
-    return 100
+    100
   else
-    return 0
+    0
   end
 end
 
@@ -71,15 +71,15 @@ welcome('AJ')
 helloAll('bob', 'JT')
 
 # Invoking default parameter
-defaultParams
+default_params
 
 # Overriding default parameter.
-defaultParams('BOB')
+default_params('BOB')
 
 num = returning(1000)
 puts num
 
-a = returnMultiple(8, 4)
+a = return_multiple(8, 4)
 
 # prints out the array [12,4]
 print a
