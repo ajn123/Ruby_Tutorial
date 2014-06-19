@@ -34,7 +34,7 @@ def correct_value(val)
   if val < min
     min
   elsif val > max
-    max
+    maxh
   else
     val
   end
