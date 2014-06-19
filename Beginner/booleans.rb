@@ -1,17 +1,13 @@
+# Switch statements allow you to
 
+distance = 23
+answer = case distance # => "23 miles away"
+         when 23
+           '23 miles away'
+         when 13
+           '13 miles away'
+         else # default case.
+           '??? miles away'
+         end
 
-=begin
-you can use &&, ||, and, or for controlling statements
-=end
-
-
-distance = 22
-
-case distance
-  when 23
-    puts "23 miles away"
-  when 13
-    puts "13 miles away"
-  else #default case.
-    puts "??? miles away"
-end
+puts answer # => "23 miles away"
