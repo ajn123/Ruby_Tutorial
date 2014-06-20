@@ -1,65 +1,46 @@
-=begin
-A hash is a unordered, object indexed collection of objects.
-=end
+person = { first_name: 'aj', last_name: 'Norton' }
 
-
-
-=begin
-Symbols refer to the same address space in memory as long as they are named the
-same.
-=end
-person = {:firstName => 'aj',:lastName => 'Norton'}
-
-
-
-#print all values.
+# print all values.
 person.values.each do |value|
   puts "value is #{value}"
 end
 
-#print all keys
+# print all keys
 person.keys.each do |key|
   puts "key is #{key}"
 end
-
 
 puts person['firstName']
 
 puts person.key('aj')
 
-#prints out all the keys for that hash
+# prints out all the keys for that hash
 puts person.keys
 
-#prints out all the values for that hash
+# prints out all the values for that hash
 puts person.values
 
-#Prints out how many key value pairs there are (2 in this case).‰
+# Prints out how many key value pairs there are (2 in this case).
 puts person.length
 
-
-
-#prints out the contents of each key value pair as the hash
-#is iterated over.
+# prints out the contents of each key value pair as the hash
+# is iterated over.
 person.each do |key, value|
-  print key,value, "\n"
+  print key, value, "\n"
 end
 
-
-#print out each entry in a hash in a different way
-person.each_entry do |n,i|
-  print n," ", i,"\n"
+# print out each entry in a hash in a different way
+person.each_entry do |n, i|
+  print n, ' ', i, "\n"
 end
 
+# One line way to print out
+person.values.each { |item| puts item }
 
-#One line way to print out
-person.values.each {|item| puts item}
+puts 'One line example'
+person.each { |key, value| puts "#{key}, #{value}" }
 
+hash = { key: 'a', value: 'b' }
 
-puts "One line example"
-person.each {|key,value| puts "#{key}, #{value}"}
-
-
-hash = {key: "a",value:"b"}
-
-#Merges the two hashes together into ones.
-puts hash.merge({extra: "c"})
+# Merges the two hashes together into ones.
+puts hash.merge(extra: 'c')
