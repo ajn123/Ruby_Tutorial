@@ -1,39 +1,36 @@
 # Implements the classes caesar cipher encryption and decryption.
 class CaesarCipher
+  ALPH_LENGTH = 26
+
   def initialize(shift)
-    @shift = shift
+    @shift = shift % ALPH_LENGTH
   end
 
   def encrypt(str)
-    str_array = str.split("")
-    str_array.map! { |char| round_over(char) }.join
+    str.chars.map { |char| cipher_block(char, @shift) }.join
   end
 
   def decrypt(str)
-    str_array = str.split("")
-    str_array.map! { |char| round_down(char) }.join
+    str.chars.map { |char| cipher_block(char, -@shift) }.join
   end
 
-
   private
-  def round_over(char)
-    if char.ord + @shift > "z".ord
+
+  def round(char, shift = @shift)
+    if char.ord + @shift > 'z'.ord
       (char.ord + @shift - 26).chr
-    elsif char.ord + @shift > "Z".ord && char.ord <= "Z".ord
+    elsif char.ord + @shift > 'Z'.ord && char.ord <= 'Z'.ord
       (char.ord + @shift - 26).chr
     else
       (char.ord + @shift).chr
     end
   end
 
-  def round_down(char)
-    if char.ord - @shift < "a".ord && /[[:lower:]]/.match(char) # checks for lowercase
-      (char.ord - @shift + 26).chr
-    elsif char.ord - @shift < "A".ord
-      (char.ord - @shift + 26).chr
+  def cipher_block(char, shift = @shift)
+    if char =~ /[[:alpha:]]/ # Is the char in the alphabet
+      round(char, shift)
     else
-      (char.ord - @shift).chr
+      char
     end
   end
 end
-

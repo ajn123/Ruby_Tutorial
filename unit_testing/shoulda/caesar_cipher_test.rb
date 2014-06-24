@@ -11,20 +11,24 @@ class TestCaesar < MiniTest::Test
 
     context "encryption" do
       should "encrypt the string without overflow" do
-        assert_equal "nop", @shift.encrypt("abc")
+        assert_equal "nop ", @shift.encrypt("abc ")
       end
 
       should "encrypt the string with overflow" do
         assert_equal "pbqr", @shift.encrypt("code")
       end
 
-      should "encypt with caps" do
+      should "encrypt with caps" do
         assert_equal "Nop", @shift.encrypt("Abc")
+      end
+
+      should "encrypt while skipping over all non-characters" do
+        assert_equal "guvf vf vg", @shift.encrypt("this is it")
       end
     end
 
     context "decryption" do
-      should "decrypet the string normally" do
+      should "decrypt the string normally" do
         assert_equal "abc", @shift.decrypt("nop")
       end
 
