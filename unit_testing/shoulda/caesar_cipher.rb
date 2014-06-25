@@ -27,7 +27,7 @@ class CaesarCipher
   end
 
   def cipher_block(char, shift = @shift)
-    if char =~ /[[:alpha:]]/ # Is the char in the alphabet
+    if char =~ /[[:alpha:]]/ # Is the char in the alphabet?
       round(char, shift)
     else
       char
